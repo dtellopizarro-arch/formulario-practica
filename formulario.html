@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="#" method="post">
+  <fieldset>
+    <legend>Solicitud de Pedido de Café</legend>
+
+    <p>
+      <label for="cliente">Nombre completo:</label>
+      <input type="text" id="cliente" name="cliente">
+    </p>
+
+    <p>
+      <label for="cafe-select">Elige el grano de origen:</label>
+      <select id="cafe-select" name="cafe">
+        <option value="">-- Selecciona un origen --</option>
+        <option value="geisha">Geisha San Fernando (Cusco)</option>
+        <option value="bourbon">Bourbon Rojo (Villa Rica)</option>
+        <option value="caturra">Caturra Lavado (Chanchamayo)</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="notas">Instrucciones especiales de entrega:</label>
+      <textarea id="notas" name="notas" rows="3"></textarea>
+    </p>
+
+    <button type="submit">Enviar Pedido</button>
+  </fieldset>
+</form>
+</body>
+<hr>
+<br><br>
+
+<body>
+
+  <form action="#" method="post">
+    <p>
+      <label for="correo">Correo corporativo</label>
+      <input type="email" id="correo" name="correo" placeholder="tucorreo@empresa.com" required>
+    </p>
+
+    <p>
+      <label for="cantidad"> Bolsas a cotizar (Min. 1, Max. 50):</label>
+      <input type="number" id="cantidad" name="cantidad" min="1" max="50" value="1" required>
+    </p>
+
+    <p>
+      <label for="dni">DNI del titular (8 digitos):</label>
+      <input type="text" id="dni" name="dni" pattern="[0-9]{8}" placeholder="12345678" required>
+    </p>
+
+    <button type="submit">Confirmar Reserva</button>
+  </form>
+</body>
+</html>

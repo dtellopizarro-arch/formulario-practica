@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+    <fieldset>
+        <legend> Restaurante De Cafe</legend>
+
+        <p>
+            <label for="cliente"> Nombre Completo:</label>
+            <input type="text" id="cliente" name="cliente">
+        </p>
+
+        <p>
+            <label for="cafe-select"> Elige el grano de origen:</label>
+            <select id="cafe-select" name="cafe">
+                <option>-- Selecciona Un Pedido --</option>
+                <option> Cafe De Tostado </option>
+                <option> Cafe cremolada </option>
+                <option> Cafe con leche </option>
+            </select>
+        </p>
+
+        <p>
+        <label for="notas">Instrucciones especiales de entrega:</label>
+        <textarea id="notas" name="notas" rows="3"></textarea>
+        </p>
+
+        <button type="submit"> Enviar Pedido</button>
+    </fieldset>
+    </form>
+</body>
+</html>
